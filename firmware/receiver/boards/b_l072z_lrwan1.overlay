@@ -1,0 +1,10 @@
+/ {
+    chosen {
+        borealis,telemetry-uart = &usart2;
+    };
+};
+
+/* UART2 is bridged to USB by ST-LINK. PA12 stays available to the radio TCXO. */
+&usb {
+    status = "disabled";
+};

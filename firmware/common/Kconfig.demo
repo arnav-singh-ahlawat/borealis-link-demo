@@ -1,0 +1,23 @@
+menu "BOREALIS link demo"
+
+config BOREALIS_FREQUENCY_HZ
+    int "LoRa center frequency in Hz"
+    default 915000000
+    range 860000000 930000000
+
+config BOREALIS_TX_POWER_DBM
+    int "LoRa transmit power in dBm"
+    default 2
+    range 2 14
+
+config BOREALIS_PACKET_GAP_MS
+    int "Minimum quiet time between LoRa datagrams (ms)"
+    default 45
+    range 35 5000
+
+config BOREALIS_PRESS_WINDOW_MS
+    int "Maximum time between presses (ms)"
+    default 450
+    range 200 1000
+
+endmenu

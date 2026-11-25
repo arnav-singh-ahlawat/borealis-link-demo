@@ -1,0 +1,10 @@
+/ {
+    aliases {
+        demo-led = &blue_led;
+    };
+};
+
+/* PA12 supplies the radio TCXO on this board. Use ST-LINK for serial. */
+&usb {
+    status = "disabled";
+};
